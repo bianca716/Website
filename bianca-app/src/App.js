@@ -1,30 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
 import React from "react";
+import { Navbar,Nav,NavDropdown} from 'react-bootstrap'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './Home'
+import Work from './Work'
+import Contact from './Contact'
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/work">Work</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Me</Link>
-            </li>
-          </ul>
-        </nav>
+    <div className="container-fluid text-center">
+      <Router>
+      <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+        <Navbar.Brand href="/">Bianca Onyekwere</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/work">Work</Nav.Link>
+            <Nav.Link href="/contact">Contact Me</Nav.Link>
+        </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+
 
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
@@ -39,19 +41,11 @@ function App() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
+  </div>
+
   );
 }
-function Home() {
-  return <h2>Home</h2>;
-}
 
-function Work() {
-  return <h2>Work</h2>;
-}
 
-function Contact() {
-  return <h2>Contact Me</h2>;
-}
 export default App;
