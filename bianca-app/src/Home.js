@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import bianca from './bianca.png'
+import bianca from './img/bianca.png'
 
 export default class Home extends Component {
   render() { 
@@ -31,7 +31,7 @@ export default class Home extends Component {
         <h5>Media planning</h5>
         <h5>Fitness</h5>
         <h5>Cooking</h5>
-        <h5>HTML/CSS</h5>
+        <h5>Learning HTML/CSS</h5>
         <h5>Copywriting</h5>
         
       </div>
