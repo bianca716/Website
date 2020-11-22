@@ -16,7 +16,7 @@ function App() {
     <div className="container-fluid text-center">
       <Router>
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Navbar.Brand href="/">Bianca Onyekwere</Navbar.Brand>
+        <Navbar.Brand href="/Website/">Bianca Onyekwere</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
@@ -31,13 +31,13 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/work">
+          <Route path="/Website/work">
             <Work />
           </Route>
-          <Route path="/contact">
+          <Route path="/Website/contact">
             <Contact />
           </Route>
-          <Route path="/">
+          <Route path="/Website/">
             <Home />
           </Route>
         </Switch>
