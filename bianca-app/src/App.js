@@ -20,9 +20,9 @@ function App() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/work">Work</Nav.Link>
-            <Nav.Link href="/contact">Contact Me</Nav.Link>
+            <Nav.Link href="/Website/">Home</Nav.Link>
+            <Nav.Link href="/Website/work">Work</Nav.Link>
+            <Nav.Link href="/Website/contact">Contact Me</Nav.Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
