@@ -16,13 +16,13 @@ function App() {
     <div className="container-fluid text-center">
       <Router>
       <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-        <Navbar.Brand href="/Website/">Bianca Onyekwere</Navbar.Brand>
+        <Navbar.Brand href="/Website/#/">Bianca Onyekwere</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-            <Nav.Link href="/Website/">Home</Nav.Link>
-            <Nav.Link href="/Website/work">Work</Nav.Link>
-            <Nav.Link href="/Website/contact">Contact Me</Nav.Link>
+            <Nav.Link href="/Website/#/">Home</Nav.Link>
+            <Nav.Link href="/Website/#/work">Work</Nav.Link>
+            <Nav.Link href="/Website/#/contact">Contact Me</Nav.Link>
         </Nav>
         </Navbar.Collapse>
       </Navbar>
@@ -31,13 +31,13 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/Website/work">
+          <Route path="/Website/#/work">
             <Work />
           </Route>
-          <Route path="/Website/contact">
+          <Route path="/Website/#/contact">
             <Contact />
           </Route>
-          <Route path="/Website/">
+          <Route path="/Website/#/">
             <Home />
           </Route>
         </Switch>
